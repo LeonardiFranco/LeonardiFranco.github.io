@@ -147,6 +147,7 @@
 }
 
 .markdown-preview a {
+  color: black;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -212,11 +213,6 @@
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-.markdown-preview a {
-  color: #0366d6;
-  text-decoration: none;
 }
 
 .markdown-preview a:hover {
