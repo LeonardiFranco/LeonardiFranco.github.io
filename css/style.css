@@ -13,13 +13,17 @@ body {
 }
 
 .title-super {
-    font-size: 60px;
+    font-size: 4em;
 }
 
 .title-logo {
     margin-top: 20px;
 }
 
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+}
 .main-img {
     object-fit: none;
     height: 350px;
