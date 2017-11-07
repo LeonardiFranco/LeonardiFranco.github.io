@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:"Segoe UI", "Roboto", sans-serif;
     color: #666756;
     font-weight: 300;
 }
@@ -13,6 +13,7 @@ body {
 }
 
 .title-super {
+    font-family:"Segoe UI", "Roboto", sans-serif;
     font-size: 4em;
 }
 
