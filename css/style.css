@@ -1,7 +1,54 @@
 body {
     font-family:"Segoe UI", "Roboto", sans-serif;
-    color: #666756;
+    color: #24292e;
     font-weight: 300;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+hr {
+  border-bottom: 1px solid #dfe2e5;
+  border-bottom-color: #eee;
+  height: 0.25em;
+  padding: 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+li {
+  margin-top: 0.25em;
+}
+
+.text-border {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+a {
+  color: black;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
 }
 
 .text-muted {
@@ -13,7 +60,6 @@ body {
 }
 
 .title-super {
-    font-family:"Segoe UI", "Roboto", sans-serif;
     font-size: 4em;
 }
 
@@ -43,87 +89,10 @@ body {
     opacity: 0.7;
 }
 
-.fa-facebook {
-  background: transparent; color: black;
-}
-
-.fa-twitter {
-  background: transparent; color: black;
-}
-
-.fa-google {
-  background: transparent; color: black;
-}
-
-.fa-linkedin {
-  background: transparent; color: black;
-}
-
-.fa-youtube {
-  background: transparent; color: black;
-}
-
-.fa-instagram {
-  background: transparent; color: black;
-}
-
-.fa-pinterest {
-  background: transparent; color: black;
-}
-
-.fa-snapchat-ghost {
-  background: transparent; color: black;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: transparent; color: black;
-}
-
-.fa-android {
-  background: transparent; color: black;
-}
-
-.fa-dribbble {
-  background: transparent; color: black;
-}
-
-.fa-vimeo {
-  background: transparent; color: black;
-}
-
-.fa-tumblr {
-  background: transparent; color: black;
-}
-
-.fa-vine {
-  background: transparent; color: black;
-}
-
-.fa-foursquare {
-  background: transparent; color: black;
-}
-
-.fa-stumbleupon {
-  background: transparent; color: black;
-}
-
-.fa-flickr {
-  background: transparent; color: black;
-}
-
-.fa-yahoo {
-  background: transparent; color: black;
-}
-
-.fa-soundcloud {
-  background: transparent; color: black;
-}
-
-.fa-reddit {
-  background: transparent; color: black;
-}
-
-.fa-rss {
+.fa-facebook, .fa-twitter, .fa-google, .fa-linkedin, .fa-youtube, .fa-instagram,
+.fa-pinterest, .fa-snapchat-ghost, .fa-skype, .fa-android, .fa-dribbble,
+.fa-vimeo, .fa-tumblr, .fa-vine, .fa-foursquare, .fa-stumbleupon, .fa-flickr,
+.fa-yahoo, .fa-soundcloud, .fa-reddit, .fa-rss,
+ {
   background: transparent; color: black;
 }
