@@ -76,6 +76,9 @@ a:hover {
     height: 350px;
     width: 1150px;
 }
+.logo {
+  max-width: 70%;
+}
 .fa {
     padding: 20px;
     font-size: 30px;
