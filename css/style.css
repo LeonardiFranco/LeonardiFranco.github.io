@@ -41,7 +41,8 @@ ul {
 }
 
 .jumbotron {
-  padding-top: 56px;
+  padding-top: 72px;
+  padding-bottom: 0px;
   margin-bottom: 0px;
 }
 
