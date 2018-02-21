@@ -11,6 +11,43 @@ body {
     word-wrap: break-word; */
 }
 
+ul {
+    list-style-position: inside;
+}
+
+.text-car {
+  color: black;
+  opacity: 0.75;
+}
+
+.text-car-sec {
+  font-size: 1.5em;
+}
+
+.car {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.carousel-bg {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.carousel-img {
+  /* height: 100vh; */
+  width: 100%;
+  object-fit: contain;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.link-white {
+  color: white;
+}
+
 h1,
 h2,
 h3,
