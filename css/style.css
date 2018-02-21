@@ -21,7 +21,7 @@ ul {
 }
 
 .text-car-sec {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .car {
@@ -41,6 +41,7 @@ ul {
 }
 
 .jumbotron {
+  padding-top: 56px;
   margin-bottom: 0px;
 }
 
