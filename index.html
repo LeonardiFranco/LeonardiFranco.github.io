@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="es-AR">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Franco Leonardi</title>
+    <meta name="description" content="Frank's Radio">
+    <meta name="author" content="Franco Leonardi">
+    <meta name="keywords" content="Franco, Leonardi, radio, dj, franco leonardi" />
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css">
+    <link type="text/css" rel="stylesheet" href="css/pixel.css">
+    <link type="text/css" rel="stylesheet" href="css/radio.css">
+    <script src="https://kit.fontawesome.com/c6e525f5ed.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand navbar-theme-primary navbar-dark">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5" href="./index.html">
+                LEONARDIFRANCO
+            </a>
+            <div class="align-items-lg-center">
+                <a href="https://www.instagram.com/leonardifranco" class="btn btn-lg btn-link text-white">
+                    <span class="fab fa-instagram"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+        <div class="container-md section-xl pt-5 mt-5">
+            <div class="row">
+                <div class="offset-md-4 col-md-4 text-center mt-5 mb-5">
+                    <h1 class="display-1">LeonardiFranco</h1>
+                    <p>Estaba aburridazo y me hice algo asi como una radio.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <article>
+                        <div class="cont">
+                            <h4 class="display-3-sm">Frank's Radio</h3>
+                        </div>
+                        <audio class="audio" controls="controls" autoplay>
+                        <source type="audio/ogg" src="https://radio.leonardifran.com/radio.ogg" />
+                    </audio>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Core -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="vendor/headroom/headroom.min.js"></script>
+    <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js"></script>
+    <script src="js/pixel.js"></script>
+    <script>
+        $('audio').mediaelementplayer({
+            features: ['playpause', 'progress', 'current', 'tracks', 'fullscreen']
+        });
+    </script>
+</body>
+
+</html>
