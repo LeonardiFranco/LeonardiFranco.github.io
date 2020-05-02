@@ -20,6 +20,17 @@
 </head>
 
 <body>
+    <div class="toast" style="position: absolute; top: 0; right: 0; z-index: 10000;">
+        <div class="toast-header">
+            <strong class="mr-auto">Franco Leonardi</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Inicia sesion para mandar un mensaje.
+        </div>
+    </div>
     <!-- Navigation -->
     <nav id="navbar-main" class="navbar navbar-main navbar-expand navbar-theme-primary navbar-dark">
         <div class="container">
@@ -36,29 +47,70 @@
 
     <!-- Page Content -->
     <section>
-        <div class="container section-xl pt-5 mt-5">
+        <div class="container pt-5 mt-5">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="display-xs-2">DJ Franco Leonardi</h1>
-                    <p>Pongo musica los sabados a la noche</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-md-3 col-md-6">
-                    <div class="blog-card">
-                        <div class="card shadow-soft border-light">
-                            <img src="img/card-photo.jpg" class="card-img-top" alt="Dj @ Disfrazate 2019">
-                            <div class="card-body">
-                                <audio class="audio" controls="controls" autoplay>
-                                    <source type="audio/ogg " src="https://radio.leonardifran.com/radio.ogg " />
-                                </audio>
+                <div class="col-md-6">
+                    <div class="col-12 text-center">
+                        <h1 class="display-xs-2">DJ Franco Leonardi</h1>
+                        <p>Pongo musica los sabados a la noche</p>
+                    </div>
+                    <div class="col">
+                        <div class="blog-card">
+                            <div class="card shadow-soft border-light">
+                                <img src="img/card-photo.jpg" class="card-img-top" alt="Dj @ Disfrazate 2019">
+                                <div class="card-body">
+                                    <audio class="audio" controls="controls" autoplay>
+                                        <source type="audio/ogg " src="https://radio.leonardifran.com/radio.ogg " />
+                                    </audio>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 mt-md-2">
+                    <div class="blog-card card shadow-soft border-light" style="height: 47vh;">
+                        <div class="card-header chat-title">
+                            <h1>Chat Room</h1>
+                            <figure class="avatar">
+                                <img src="https://p7.hiclipart.com/preview/349/273/275/livechat-online-chat-computer-icons-chat-room-web-chat-others.jpg" />
+                            </figure>
+                        </div>
+                        <div class="card-body messages">
+                            <div class="messages-content px-1" style="overflow:scroll" id="messages-content"></div>
+                        </div>
+                        <form class="message-box" id="message-form">
+                            <textarea type="text" class="message-input" id="message" autocomplete="off" placeholder="Escribe un mensaje..."></textarea>
+                            <button type="submit" id="submit" class="message-submit">Enviar</button>
+                        </form>
+                    </div>
+                    <button hidden class="btn btn-primary center-horizontal-absolute mb-2" id="sign-in">Iniciar sesion</button>
+                    <button hidden class="btn btn-primary center-horizontal-absolute mb-2" id="sign-out">Cerrar sesion</button>
+                </div>
             </div>
-        </div>
     </section>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC-sFtFdbpli8fbWgU4rOCln1M7YiEGiiY",
+            authDomain: "stellar-builder-275317.firebaseapp.com",
+            databaseURL: "https://stellar-builder-275317.firebaseio.com",
+            projectId: "stellar-builder-275317",
+            storageBucket: "stellar-builder-275317.appspot.com",
+            messagingSenderId: "732098420694",
+            appId: "1:732098420694:web:c056ee2a64e35dc9a70e77"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <!-- Core -->
     <script src="vendor/jquery/jquery.min.js "></script>
     <script src="vendor/popper/popper.min.js "></script>
