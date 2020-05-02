@@ -503,10 +503,9 @@ Chat
     resize: none;
     color: rgba(255, 255, 255, 0.7);
     font-size: 11px;
-    height: 17px;
     margin: 0;
     padding-right: 20px;
-    width: 265px;
+    width: 80%;
 }
 
 .message-box textarea:focus:-webkit-placeholder {
