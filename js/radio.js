@@ -184,7 +184,7 @@ function createAndInsertMessage(id, timestamp, className) {
 function displayMessage(id, timestamp, name, text, picUrl) {
     let className = "new";
     if (isUserSignedIn()) {
-        className = getUserName() == name ? "personal" : "new";
+        className = getUserName() == name ? "message-personal" : "new";
     }
     var div = document.getElementById(id) || createAndInsertMessage(id, timestamp, className);
 
