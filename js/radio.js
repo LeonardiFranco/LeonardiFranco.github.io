@@ -77,6 +77,7 @@ function onMessageFormSubmit(e) {
     // Check that the user entered a message and is signed in.
     if (messageInputElement.value && checkSignedInWithMessage()) {
         saveMessage(messageInputElement.value).then(function() {
+            messageInputElement.value = "";
             // Clear message text field and re-enable the SEND button.
             toggleButton();
         });
