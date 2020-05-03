@@ -324,6 +324,7 @@ Chat
 }
 
 .messages .messages-content {
+    background-color: #eee;
     position: absolute;
     top: 0;
     left: 0;
