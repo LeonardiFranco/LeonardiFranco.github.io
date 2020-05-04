@@ -489,7 +489,6 @@ Chat
     -webkit-flex: 0 1 40px;
     -ms-flex: 0 1 40px;
     flex: 0 1 40px;
-    width: 100%;
     padding: 10px;
     position: relative;
 }
@@ -500,7 +499,6 @@ Chat
     outline: none !important;
     resize: none;
     margin: 0;
-    width: 83%;
 }
 
 .message-box textarea:focus:-webkit-placeholder {
