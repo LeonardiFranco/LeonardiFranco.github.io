@@ -317,18 +317,17 @@ Chat
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     overflow: hidden;
     position: relative;
     width: 100%;
 }
 
 .messages .messages-content {
-    background-color: #eee;
     position: absolute;
     top: 0;
     left: 0;
-    height: 101%;
+    height: 100%;
     width: 100%;
 }
 
@@ -337,7 +336,7 @@ Chat
     float: left;
     padding: 6px 10px 7px;
     border-radius: 10px 10px 10px 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     margin: 8px 0;
     font-size: 11px;
     line-height: 1.4;
@@ -357,7 +356,7 @@ Chat
     content: '';
     position: absolute;
     bottom: -6px;
-    border-top: 6px solid rgba(0, 0, 0, 0.3);
+    border-top: 6px solid rgba(0, 0, 0, 0.6);
     left: 0;
     border-right: 7px solid transparent;
 }
@@ -383,7 +382,6 @@ Chat
 
 .messages .message.message-personal {
     float: right;
-    color: #fff;
     text-align: right;
     background: -webkit-linear-gradient(330deg, #248A52, #257287);
     background: linear-gradient(120deg, #248A52, #257287);
@@ -492,7 +490,6 @@ Chat
     -ms-flex: 0 1 40px;
     flex: 0 1 40px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
     padding: 10px;
     position: relative;
 }
@@ -502,11 +499,8 @@ Chat
     border: none;
     outline: none !important;
     resize: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 11px;
     margin: 0;
-    padding-right: 20px;
-    width: 80%;
+    width: 83%;
 }
 
 .message-box textarea:focus:-webkit-placeholder {
@@ -514,19 +508,6 @@ Chat
 }
 
 .message-box .message-submit {
-    position: absolute;
-    z-index: 1;
-    top: 9px;
-    right: 10px;
-    color: #fff;
-    border: none;
-    background: #248A52;
-    font-size: 10px;
-    text-transform: uppercase;
-    line-height: 1;
-    padding: 6px 10px;
-    border-radius: 10px;
-    outline: none !important;
     -webkit-transition: background .2s ease;
     transition: background .2s ease;
 }
@@ -537,7 +518,7 @@ Chat
 
 .message-text {
     color: white;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 

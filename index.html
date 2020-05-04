@@ -19,29 +19,22 @@
 
 </head>
 
-<body>
-    <div class="toast" style="position: absolute; top: 0; right: 0; z-index: 10000;">
-        <div class="toast-header">
-            <strong class="mr-auto">Franco Leonardi</strong>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="toast-body">
-            Inicia sesion para mandar un mensaje.
-        </div>
-    </div>
+<body class="bg-gray-dark">
     <!-- Navigation -->
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand navbar-theme-primary navbar-dark">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand navbar-theme-light navbar-light headroom">
         <div class="container">
-            <a class="navbar-brand mr-lg-5" href="#">
+            <a class="navbar-brand navbar-brand-dark text-black mr-lg-5" href="#">
                 LEONARDIFRANCO
             </a>
-            <div class="align-items-lg-center">
-                <a href="https://www.instagram.com/leonardifranco" class="btn btn-lg btn-link text-white">
-                    <span class="fab fa-instagram"></span>
-                </a>
-            </div>
+            <a class="navbar-brand navbar-brand-light text-white mr-lg-5" href="#">
+                LEONARDIFRANCO
+            </a>
+            <a href="https://www.instagram.com/leonardifranco" class="navbar-brand navbar-brand-dark text-black">
+                <span class="fab fa-instagram"></span>
+            </a>
+            <a href="https://www.instagram.com/leonardifranco" class="navbar-brand navbar-brand-light text-white">
+                <span class="fab fa-instagram"></span>
+            </a>
         </div>
     </nav>
 
@@ -49,41 +42,51 @@
     <section>
         <div class="container pt-5 mt-5">
             <div class="row">
-                <!-- <div class="col-md-6"> -->
-                <div class="col-12 text-center">
-                    <h1 class="display-xs-2">DJ Franco Leonardi</h1>
-                    <p>Pongo musica los sabados a la noche</p>
-                </div>
-                <div class="col">
-                    <div class="blog-card">
-                        <div class="card shadow-soft border-light">
-                            <img src="img/card-photo.jpg" class="card-img-top" alt="Dj @ Disfrazate 2019">
-                            <div class="card-body">
-                                <audio class="audio" controls="controls" autoplay>
-                                    <source type="audio/ogg " src="https://radio.leonardifran.com/radio.ogg " />
-                                </audio>
+                <div class="col-md-6">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h1 class="display-xs-2 text-neutral">DJ Franco Leonardi</h1>
+                            <p class="text-neutral">Pongo musica los sabados a la noche</p>
+                        </div>
+                        <div class="col-12 mt-5 mb-5">
+                            <div class="blog-card">
+                                <div class="card shadow-pixel border-0">
+                                    <img src="img/card-photo.jpg" class="card-img-top" alt="Dj @ Disfrazate 2019">
+                                    <div class="card-body">
+                                        <div id="radio-player" hidden>
+                                            <audio class="audio" controls="controls" autoplay onerror="radioError()" ondurationchange="radioSuccess()">
+                                                <source type="audio/ogg"
+                                                    src="https://radio.leonardifran.com/radio.ogg" />
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- </div> -->
                 </div>
-                <!-- <div class="col-md-6 mt-md-2">
-                    <div class="blog-card card shadow-soft border-light" style="height: 75vh;">
-                        <div class="card-header">
-                            <h6>Chat Room</h6>
+                <div class="col-md-6 mt-md-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="blog-card card shadow-pixel border-0" style="height: 75vh;">
+                                <div class="card-header">
+                                    <h6>Chat Room</h6>
+                                </div>
+                                <div class="card-body messages">
+                                    <div class="messages-content bg-gray-700 px-1" style="overflow-y:scroll" id="messages-content"></div>
+                                </div>
+                                <form class="message-box card-footer" id="message-form">
+                                    <input disabled type="text" class="message-input" id="message" autocomplete="off" placeholder="Inicia sesion para enviar mensajes"></input>
+                                    <button type="submit" id="submit" class="btn btn-sm btn-success message-submit">Enviar</button>
+                                </form>
+                            </div>
+                            <button hidden class="btn btn-outline-success center-horizontal-absolute mb-2" id="sign-in">Iniciar
+                                sesion</button>
+                            <button hidden class="btn btn-outline-warning center-horizontal-absolute mb-2" id="sign-out">Cerrar
+                                sesion</button>
                         </div>
-                        <div class="card-body messages">
-                            <div class="messages-content px-1" style="overflow-y:scroll" id="messages-content"></div>
-                        </div>
-                        <form class="message-box" id="message-form">
-                            <textarea type="text" class="message-input" id="message" autocomplete="off" placeholder="Escribe un mensaje..."></textarea>
-                            <button type="submit" id="submit" class="message-submit">Enviar</button>
-                        </form>
                     </div>
-                    <button hidden class="btn btn-primary center-horizontal-absolute mb-2" id="sign-in">Iniciar sesion</button>
-                    <button hidden class="btn btn-primary center-horizontal-absolute mb-2" id="sign-out">Cerrar sesion</button>
-                </div> -->
-            </div>
+                </div>
     </section>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -97,16 +100,16 @@
     <script>
     </script>
     <!-- Core -->
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/popper/popper.min.js "></script>
-    <script src="vendor/bootstrap/bootstrap.min.js "></script>
-    <script src="vendor/headroom/headroom.min.js "></script>
-    <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js "></script>
-    <script src="vendor/waypoints/jquery.waypoints.min.js "></script>
-    <script src="vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js "></script>
-    <script src="js/pixel.js "></script>
-    <script src="js/radio.js "></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="vendor/headroom/headroom.min.js"></script>
+    <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js"></script>
+    <script src="js/pixel.js"></script>
+    <script src="js/radio.js"></script>
 </body>
 
 </html>
