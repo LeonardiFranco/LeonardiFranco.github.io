@@ -45,7 +45,7 @@
                 <div class="col-md-6">
                     <div class="row text-center">
                         <div class="col-12">
-                            <h1 class="display-xs-2 text-neutral mb-0">DJ Franco Leonardi</h1>
+                            <h1 class="display-xs-2 text-gray-700 mb-0 bg-neutral border-light shadow-pixel">DJ Franco Leonardi</h1>
                             <p class="text-neutral">Pongo musica los sabados a la noche</p>
                         </div>
                         <div class="col-12 mt-5 mb-5">
@@ -76,8 +76,8 @@
                                     <div class="messages-content bg-gray-700 px-1" style="overflow-y:scroll" id="messages-content"></div>
                                 </div>
                                 <form class="message-box card-footer" id="message-form">
-                                    <input disabled type="text" class="message-input w-100" id="message" autocomplete="off" placeholder="Inicia sesion para enviar mensajes"></input>
-                                    <button type="submit" id="submit" class="btn btn-sm btn-success message-submit position-absolute right-1">Enviar</button>
+                                    <input disabled type="text" class="message-input" id="message" autocomplete="off" placeholder="Inicia sesion para enviar mensajes"></input>
+                                    <button hidden type="submit" id="submit" class="btn btn-sm btn-success message-submit position-absolute right-1">Enviar</button>
                                 </form>
                             </div>
                             <button hidden class="btn btn-outline-success center-horizontal-absolute mb-2" id="sign-in">Iniciar
@@ -98,19 +98,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
 
     <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyC-sFtFdbpli8fbWgU4rOCln1M7YiEGiiY",
-            authDomain: "stellar-builder-275317.firebaseapp.com",
-            databaseURL: "https://stellar-builder-275317.firebaseio.com",
-            projectId: "stellar-builder-275317",
-            storageBucket: "stellar-builder-275317.appspot.com",
-            messagingSenderId: "732098420694",
-            appId: "1:732098420694:web:5fe1c98d60f2993ba70e77"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
     </script>
     <!-- Core -->
     <script src="vendor/jquery/jquery.min.js"></script>

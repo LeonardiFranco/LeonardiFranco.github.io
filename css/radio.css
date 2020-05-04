@@ -499,6 +499,7 @@ Chat
     outline: none !important;
     resize: none;
     margin: 0;
+    width: calc(100% - 60px);
 }
 
 .message-box textarea:focus:-webkit-placeholder {
