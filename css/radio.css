@@ -37,6 +37,39 @@ body {
     margin-left: -2px;
 }
 
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 4rem;
+        margin-left: 0px;
+    }
+    .hero-subtitle-1 {
+        font-size: 2rem;
+        margin-left: 0px;
+    }
+    .hero-subtitle-2 {
+        font-size: 3rem;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    .hero-subtitle-1 {
+        font-size: 1.5rem;
+    }
+    .hero-subtitle-2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
 .frank-img-top {
     object-fit: cover;
     object-position: 100% 30%;

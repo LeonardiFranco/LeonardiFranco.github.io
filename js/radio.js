@@ -240,7 +240,7 @@ function checkSetup() {
 }
 
 function radioError() {
-    radioElement.innerHTML = "<h4>Volve el sabado a las 20:00hs</h4>";
+    radioElement.innerHTML = '<h5>Volve el sabado a las 20:00hs</h5>';
     radioElement.removeAttribute('hidden');
 }
 
