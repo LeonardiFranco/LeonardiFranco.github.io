@@ -1,10 +1,59 @@
-@import 'https://fonts.googleapis.com/css?family=Lato';
+@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Staatliches&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Galada&display=swap';
 * {
     outline: none;
 }
 
 
-/*👇 for preload play/pause svg 😎*/
+/* for preload play/pause svg */
+
+body {
+    background-color: #171717;
+}
+
+.chat-title {
+    font-family: Staatliches;
+    font-size: 1.5em;
+}
+
+.hero-title {
+    font-family: 'Galada';
+    color: #E9E9E9;
+    font-size: 9vw;
+}
+
+.hero-subtitle-1 {
+    font-family: Staatliches;
+    color: #E9E9E9;
+    font-size: 3vw;
+    line-height: 0px;
+}
+
+.hero-subtitle-2 {
+    font-family: Staatliches;
+    color: #E9E9E9;
+    font-size: 6vw;
+    margin-left: -2px;
+}
+
+.frank-img-top {
+    object-fit: cover;
+    object-position: 100% 30%;
+    height: 150px;
+}
+
+.shadow-red {
+    box-shadow: 0.2rem 0.2rem 0 #FF5757 !important;
+}
+
+.shadow-blue {
+    box-shadow: 0.2rem 0.2rem 0 #19C4F1 !important;
+}
+
+.navbar-frank {
+    background-color: #606060;
+}
 
 body:after {
     position: absolute;
@@ -17,22 +66,6 @@ body:after {
 
 .audio {
     width: 90%;
-}
-
-article {
-    position: absolute;
-    width: 50%;
-    height: 300px;
-    top: 40px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    padding: 50px 5%;
-    box-sizing: border-box;
-    box-shadow: 0 0 21px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
 }
 
 .cont {
@@ -218,7 +251,7 @@ article {
     border-radius: 5px !important;
 }
 
-@-webkit-keyframes move {
+@keyframes move {
     0% {
         background-position: 0 0;
     }
@@ -227,84 +260,13 @@ article {
     }
 }
 
-
-/*--------------------
-Chat
---------------------*/
-
-.chat {
-    height: 47vh;
-    max-height: 500px;
-    z-index: 2;
-    overflow: hidden;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-
-/*--------------------
-  Chat Title
-  --------------------*/
-
-.chat-title {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 45px;
-    -ms-flex: 0 1 45px;
-    flex: 0 1 45px;
-    position: relative;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.2);
-    color: #fff;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 10px 10px 10px 50px;
-}
-
-.chat-title h1,
-.chat-title h2 {
-    font-weight: normal;
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-}
-
-.chat-title h2 {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 8px;
-    letter-spacing: 1px;
-}
-
-.chat-title .avatar {
-    position: absolute;
-    z-index: 1;
-    top: 8px;
-    left: 9px;
-    border-radius: 30px;
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border: 2px solid rgba(255, 255, 255, 0.24);
-}
-
-.chat-title .avatar img {
-    width: 100%;
-    height: auto;
+@-webkit-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
 }
 
 
@@ -330,6 +292,7 @@ Chat
     height: 100%;
     width: 100%;
     overflow-y: auto;
+    background-color: #606060;
 }
 
 .messages .message {
