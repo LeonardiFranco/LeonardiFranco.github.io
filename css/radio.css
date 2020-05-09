@@ -12,6 +12,10 @@ body {
     background-color: #171717;
 }
 
+.ig-logo {
+    font-size: 1.5em;
+}
+
 .chat-title {
     font-family: Staatliches;
     font-size: 1.5em;
@@ -280,6 +284,7 @@ body:after {
     background-size: 50px 50px;
     animation: move 3s linear infinite;
     opacity: 0.1;
+    width: auto;
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-current {
