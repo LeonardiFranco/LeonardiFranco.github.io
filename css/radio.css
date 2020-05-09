@@ -39,7 +39,7 @@ body {
 
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 4rem;
+        font-size: 5rem;
         margin-left: 0px;
     }
     .hero-subtitle-1 {
@@ -54,7 +54,19 @@ body {
 
 @media (max-width: 576px) {
     .hero-title {
-        font-size: 3.5rem;
+        font-size: 4.3rem;
+    }
+    .hero-subtitle-1 {
+        font-size: 2rem;
+    }
+    .hero-subtitle-2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 3rem;
     }
     .hero-subtitle-1 {
         font-size: 1.5rem;
@@ -64,9 +76,9 @@ body {
     }
 }
 
-@media (max-width: 400px) {
-    .hero-title {
-        font-size: 3rem;
+@media (min-width: 768px) {
+    .display-5-md {
+        font-size: 1.25rem;
     }
 }
 
@@ -77,11 +89,11 @@ body {
 }
 
 .shadow-red {
-    box-shadow: 0.2rem 0.2rem 0 #FF5757 !important;
+    box-shadow: 0.4rem 0.6rem 0 #FF5757 !important;
 }
 
 .shadow-blue {
-    box-shadow: 0.2rem 0.2rem 0 #19C4F1 !important;
+    box-shadow: 0.4 rem 0.6rem 0 #19C4F1 !important;
 }
 
 .navbar-frank {
