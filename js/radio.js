@@ -239,13 +239,20 @@ function checkSetup() {
     }
 }
 
-function radioError() {
-    radioElement.innerHTML = '<span class="display-5-md">Volve el sabado a las 20:00hs</span>';
-    radioElement.removeAttribute('hidden');
+function oggSuccess() {
+    if (mp3Element.hasAttribute('hidden')) {
+        comeBackElement.remove();
+        mp3Element.remove();
+        oggElement.removeAttribute('hidden');
+    }
 }
 
-function radioSuccess() {
-    radioElement.removeAttribute('hidden');
+function mp3Success() {
+    if (oggElement.hasAttribute('hidden')) {
+        comeBackElement.remove();
+        oggElement.remove();
+        mp3Element.removeAttribute('hidden');
+    }
 }
 
 // Shortcuts to DOM Elements.
@@ -256,7 +263,9 @@ var submitButtonElement = document.getElementById('submit');
 var signInSnackbarElement = document.getElementById('must-signin-snackbar');
 var signInButtonElement = document.getElementById('sign-in');
 var signOutButtonElement = document.getElementById('sign-out');
-var radioElement = document.getElementById('radio-player');
+var oggElement = document.getElementById('ogg-player');
+var mp3Element = document.getElementById('mp3-player');
+var comeBackElement = document.getElementById('come-back');
 
 // Saves message on form submit.
 messageFormElement.addEventListener('submit', onMessageFormSubmit);
