@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Jost&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Staatliches&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Galada&display=swap';
 * {
@@ -151,14 +151,14 @@ body:after {
 }
 
 .cont h3 {
-    font-family: 'Lato';
+    font-family: 'Jost';
     font-size: 50px;
     margin: 0 0 10px 0;
     color: #ccc;
 }
 
 .cont time {
-    font-family: 'Lato';
+    font-family: 'Jost';
     font-size: 12px;
     color: #999;
 }
@@ -224,7 +224,7 @@ body:after {
     bottom: 0;
     top: 0;
     margin: auto;
-    font-family: 'Lato';
+    font-family: 'Jost';
     font-size: 32px;
     pointer-events: none;
 }
