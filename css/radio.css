@@ -27,17 +27,22 @@ body {
     font-size: 9vw;
 }
 
+.hero-subtitle {
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+}
+
 .hero-subtitle-1 {
     font-family: Staatliches;
     color: #E9E9E9;
-    font-size: 3vw;
-    line-height: 0px;
+    font-size: 3.22vw;
+    line-height: 0.8rem;
 }
 
 .hero-subtitle-2 {
     font-family: Staatliches;
     color: #E9E9E9;
-    font-size: 6vw;
+    font-size: 6.4vw;
     margin-left: -2px;
 }
 
