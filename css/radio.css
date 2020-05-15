@@ -542,7 +542,7 @@ body:after {
     outline: none !important;
     resize: none;
     margin: 0;
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
 }
 
 .message-box textarea:focus:-webkit-placeholder {
@@ -550,12 +550,19 @@ body:after {
 }
 
 .message-box .message-submit {
+    color: #ddd;
+    background-color: #274991;
+    border-radius: 100%;
+    border-width: 0px;
+    height: 2rem;
+    width: 2rem;
+    bottom: 0.85rem;
     -webkit-transition: background .2s ease;
     transition: background .2s ease;
 }
 
 .message-box .message-submit:hover {
-    background: #1D7745;
+    background: #2A354F;
 }
 
 .message-text {
