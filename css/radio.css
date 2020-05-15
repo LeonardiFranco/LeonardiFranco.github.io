@@ -41,6 +41,25 @@ body {
     margin-left: -2px;
 }
 
+.text-featuring {
+    font-family: Staatliches;
+    letter-spacing: 0.1rem;
+}
+
+.text-dj-name {
+    font-family: Staatliches;
+    font-size: 1.1rem;
+    letter-spacing: 0.4rem;
+}
+
+.text-dj {
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    font-family: Staatliches;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
 .message-card {
     height: 82%;
 }
