@@ -41,6 +41,16 @@ body {
     margin-left: -2px;
 }
 
+.message-card {
+    height: 82%;
+}
+
+@media (max-width: 992px) {
+    .message-card {
+        height: 65vh;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 5rem;

@@ -37,24 +37,25 @@
 
     <!-- Page Content -->
     <section>
-        <div class="px-3 px-sm-5 pt-5 mt-5">
+        <div class="px-3 px-lg-5 pt-5 mt-4 mt-lg-3">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row text-center order-1">
-                        <div class="col-12">
-                            <div class="hero-title text-left">LeonardiFranco</div>
+                        <div class="col-12 mb-5 mb-lg-2 text-center text-lg-left w-100">
+                            <div class="hero-title">LeonardiFranco</div>
                         </div>
-                        <div class="col-12 order-lg-3 text-left">
+                        <div class="col-12 mb-3 mb-lg-0 order-lg-3 text-center text-lg-left w-100">
                             <div class="hero-subtitle-1">le ponemos onda a</div>
                             <div class="hero-subtitle-2">la noche del sabado</div>
                         </div>
-                        <div class="col-12 mt-3 mb-3 order-lg-2">
+                        <div class="col-12 mb-4 mb-lg-3 order-lg-2">
                             <div class="row">
-                                <div class="blog-card col-lg-11">
+                                <div class="blog-card col-lg-12">
                                     <div class="card shadow-blue border-0">
                                         <div>
                                             <img src="img/card-photo.jpg" class="card-img-top frank-img-top" alt="Dj @ Disfrazate 2019">
                                         </div>
+                                        <span class="mb-n2 mt-2 text-italic"><b>Featuring DJ Santi Landaburo</b></span>
                                         <div class="card-body">
                                             <div id="ogg-player" hidden>
                                                 <audio class="audio" controls="controls" autoplay ondurationchange="oggSuccess()">
@@ -69,7 +70,7 @@
                                                 </audio>
                                             </div>
                                             <div id="come-back">
-                                                <span class="display-5-md">Volve el sabado a las 20:00hs</span>
+                                                <span class="display-5-md">Volve hoy a las 22:30hs</span>
                                             </div>
                                         </div>
                                     </div>
@@ -79,9 +80,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="row">
+                    <div class="row h-100">
                         <div class="col">
-                            <div class="blog-card card shadow-red border-0 mt-lg-4" style="height: 65vh;">
+                            <div class="blog-card card shadow-red border-0 mt-lg-4 mb-3 message-card">
                                 <div class="card-header">
                                     <span class="chat-title">CHAT ROOM</span>
                                 </div>
@@ -100,6 +101,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -111,6 +114,18 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
 
     <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC-sFtFdbpli8fbWgU4rOCln1M7YiEGiiY",
+            authDomain: "stellar-builder-275317.firebaseapp.com",
+            databaseURL: "https://stellar-builder-275317.firebaseio.com",
+            projectId: "stellar-builder-275317",
+            storageBucket: "stellar-builder-275317.appspot.com",
+            messagingSenderId: "732098420694",
+            appId: "1:732098420694:web:efb6623596a82ac1a70e77"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
     </script>
     <!-- Core -->
     <script src="vendor/jquery/jquery.min.js"></script>
