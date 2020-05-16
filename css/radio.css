@@ -5,11 +5,22 @@
     outline: none;
 }
 
+:root {
+    --font-color: #fefefe;
+    --background-color: #171717;
+    --sec-background-color: #eee;
+    --red: #FF5757;
+    --blue: #19C4F1;
+    --nav-bar: #222;
+    --primary: #274991;
+    --primary-disabled: #274991;
+}
+
 
 /* for preload play/pause svg */
 
 body {
-    background-color: #171717;
+    background-color: var(--background-color);
 }
 
 .ig-logo {
@@ -23,7 +34,7 @@ body {
 
 .hero-title {
     font-family: 'Galada';
-    color: #E9E9E9;
+    color: var(--font-color);
     font-size: 9vw;
 }
 
@@ -34,20 +45,20 @@ body {
 
 .hero-subtitle-1 {
     font-family: Staatliches;
-    color: #E9E9E9;
+    color: var(--font-color);
     font-size: 3.22vw;
     line-height: 0.8rem;
 }
 
 .hero-subtitle-2 {
     font-family: Staatliches;
-    color: #E9E9E9;
+    color: var(--font-color);
     font-size: 6.4vw;
     margin-left: -2px;
 }
 
 .featuring-box {
-    background-color: #eee;
+    background-color: var(--sec-background-color);
 }
 
 .text-featuring {
@@ -131,15 +142,15 @@ body {
 }
 
 .shadow-red {
-    box-shadow: 0.4rem 0.6rem 0 #FF5757 !important;
+    box-shadow: 0.4rem 0.6rem 0 var(--red) !important;
 }
 
 .shadow-blue {
-    box-shadow: 0.4rem 0.6rem 0 #19C4F1 !important;
+    box-shadow: 0.4rem 0.6rem 0 var(--blue) !important;
 }
 
 .navbar-frank {
-    background-color: #2b2b2b;
+    background-color: var(--nav-bar);
 }
 
 body:after {
@@ -380,7 +391,7 @@ body:after {
     height: 100%;
     width: 100%;
     overflow-y: auto;
-    background-color: #606060;
+    background-color: var(--nav-bar);
 }
 
 .messages .message {
@@ -388,13 +399,12 @@ body:after {
     float: left;
     padding: 6px 10px 7px;
     border-radius: 10px 10px 10px 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--background-color);
     margin: 8px 0;
     font-size: 11px;
     line-height: 1.4;
     margin-left: 35px;
     position: relative;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .messages .message .timestamp {
@@ -561,7 +571,7 @@ body:after {
 
 .message-box .message-submit {
     color: #ddd;
-    background-color: #274991;
+    background-color: var(--primary);
     border-radius: 100%;
     border-width: 0px;
     height: 2rem;
@@ -573,7 +583,7 @@ body:after {
 }
 
 .message-box .message-submit:hover {
-    background: #1e3973;
+    background: var(--primary-disabled);
 }
 
 .message-box .message-submit:disabled {
