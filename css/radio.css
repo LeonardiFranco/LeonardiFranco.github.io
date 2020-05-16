@@ -46,6 +46,10 @@ body {
     margin-left: -2px;
 }
 
+.featuring-box {
+    background-color: #eee;
+}
+
 .text-featuring {
     font-family: Staatliches;
     letter-spacing: 0.1rem;
@@ -54,12 +58,12 @@ body {
 .text-dj-name {
     font-family: Staatliches;
     font-size: 1.1rem;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
 }
 
 .text-dj {
-    margin-right: 0.4rem;
-    margin-left: 0.4rem;
+    margin-right: 0.3rem;
+    margin-left: 0.5rem;
     font-family: Staatliches;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
