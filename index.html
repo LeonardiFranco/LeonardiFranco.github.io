@@ -24,43 +24,43 @@
 
 <body>
     <!-- Navigation -->
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand navbar-frank headroom">
-        <div class="container">
-            <a class="navbar-brand mr-lg-5" href="#">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand navbar-frank headroom shadow-4">
+        <div class="container container-lg">
+            <a class="navbar-brand ml-lg-5 mr-lg-5" href="#">
                 <img src="img/logo.png" alt="LeonardiFranco">
             </a>
-            <a href="https://www.instagram.com/leonardifranco" class="navbar-brand text-white ig-logo">
+            <a href="https://www.instagram.com/leonardifranco" class="navbar-brand text-white ig-logo mr-lg-5">
                 <span class="fab fa-instagram"></span>
             </a>
         </div>
     </nav>
 
     <!-- Page Content -->
-    <section>
-        <div class="px-3 px-lg-5 pt-5 mt-5 mt-lg-3">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="row text-center order-1">
-                        <div class="col-12 mb-4 mb-lg-2 text-center text-lg-left w-100">
-                            <div class="hero-title">Leonardi Franco</div>
-                        </div>
-                        <div class="col-12 mb-4 mb-lg-0 order-lg-3 text-center text-lg-left w-100">
-                            <div class="hero-subtitle hero-subtitle-1">le ponemos onda a</div>
-                            <div class="hero-subtitle hero-subtitle-2">tus findes</div>
-                        </div>
-                        <div class="col-12 mb-5 mb-lg-4 order-lg-2">
-                            <div class="row">
-                                <div class="blog-card col-lg-11">
-                                    <div class="card shadow-blue border-0">
-                                        <div>
-                                            <img src="img/card-photo.jpg" class="card-img-top frank-img-top" alt="Dj @ Disfrazate 2019">
-                                        </div>
-                                        <!-- <section class="pb-2 pt-2 text-italic text-black featuring-box">
+    <section class="container-lg px-3 px-lg-5 pt-5 mt-5 mt-lg-3">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row text-center order-1">
+                    <div class="col-12 mb-5 mb-lg-2 text-center text-lg-left w-100">
+                        <div class="hero-title">Leonardi Franco</div>
+                    </div>
+                    <div class="col-12 mb-5 mb-lg-0 order-lg-3 text-center text-lg-left w-100">
+                        <div class="hero-subtitle hero-subtitle-1">le ponemos onda a</div>
+                        <div class="hero-subtitle hero-subtitle-2">tus findes</div>
+                    </div>
+                    <div class="col-12 mb-lg-4 order-lg-2">
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <div class="blog-card shadow-1 card border-0 round-5">
+                                    <div class="card-img-top frank-img-top">
+                                        <span class="alt-frank">Dj @ Disfrazate 2019</span>
+                                    </div>
+                                    <!-- <section class="pb-2 pt-2 text-italic text-black featuring-box">
                                             <span class="text-featuring">Featuring</span>
                                             <span class="text-dj">DJ</span>
                                             <span class="text-dj-name">Santi Landaburo</span>
                                         </section> -->
-                                        <div class="card-body">
+                                    <div class="card-footer shadow-8">
+                                        <div class="shadow-1 round-5">
                                             <div id="ogg-player" hidden>
                                                 <audio class="audio" controls="controls" autoplay ondurationchange="oggSuccess()">
                                                     <source type="audio/ogg"
@@ -73,9 +73,9 @@
                                                         src="https://radio.leonardifran.com/radio.mp3" />
                                                 </audio>
                                             </div>
-                                            <div id="come-back">
-                                                <span class="display-5-md">Volve hoy a las 22:30hs</span>
-                                            </div>
+                                        </div>
+                                        <div id="come-back">
+                                            <span class="display-5-md">Volve hoy a las 22:30hs</span>
                                         </div>
                                     </div>
                                 </div>
@@ -83,26 +83,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="row h-100">
-                        <div class="col">
-                            <div class="blog-card card shadow-red border-0 mt-lg-4 mb-3 message-card">
-                                <div class="card-header">
-                                    <span class="chat-title">CHAT ROOM</span>
-                                </div>
-                                <div class="card-body messages">
-                                    <div class="messages-content px-1" id="messages-content"></div>
-                                </div>
-                                <form class="message-box card-footer" id="message-form">
+            </div>
+            <div class="col-lg-4">
+                <div class="row h-100">
+                    <div class="col">
+                        <div class="blog-card card shadow-1 border-0 mt-lg-4 mb-3 message-card round-5">
+                            <div class="card-header shadow-1 z-3">
+                                <span class="chat-title">CHAT ROOM</span>
+                            </div>
+                            <div class="card-body messages">
+                                <div class="messages-content px-1" id="messages-content"></div>
+                            </div>
+                            <div class="message-box card-footer shadow-4 z-3">
+                                <form id="message-form">
                                     <input disabled type="text" class="message-input" id="message" autocomplete="off" placeholder="Inicia sesion para enviar mensajes"></input>
-                                    <button disabled hidden type="submit" id="submit" class="message-submit position-absolute right-2 fa fa-paper-plane-o"></button>
+                                    <button disabled hidden type="submit" id="submit" class="message-submit position-absolute right-2 fa fa-paper-plane-o shadow-2 shadow-8-hover"></button>
                                 </form>
                             </div>
-                            <button hidden class="btn btn-outline-success center-horizontal-absolute mb-2" id="sign-in">Iniciar
-                                sesion</button>
-                            <button hidden class="btn btn-outline-warning center-horizontal-absolute mb-2" id="sign-out">Cerrar
-                                sesion</button>
                         </div>
+                        <button hidden class="btn btn-outline-success center-horizontal-absolute mb-2" id="sign-in">Iniciar
+                            sesion</button>
+                        <button hidden class="btn btn-outline-warning center-horizontal-absolute mb-2" id="sign-out">Cerrar
+                            sesion</button>
                     </div>
                 </div>
             </div>
