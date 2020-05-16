@@ -275,8 +275,11 @@ body {
     height: auto;
 }
 
-.messages .message.message-personal {
+.messages .message:not(:first-child) {
     margin-top: 1rem;
+}
+
+.messages .message.message-personal {
     float: right;
     text-align: right;
     background: -webkit-linear-gradient(330deg, #248A52, #257287);
