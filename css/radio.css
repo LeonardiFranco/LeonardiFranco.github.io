@@ -13,7 +13,7 @@
     --blue: #19C4F1;
     --nav-bar: #222;
     --primary: #274991;
-    --primary-disabled: #274991;
+    --primary-hover: #1e3973;
 }
 
 
@@ -582,8 +582,8 @@ body:after {
     transition: background .2s ease;
 }
 
-.message-box .message-submit:hover {
-    background: var(--primary-disabled);
+.message-box .message-submit:hover.message-submit:not(:disabled) {
+    background: var(--primary-hover);
 }
 
 .message-box .message-submit:disabled {
