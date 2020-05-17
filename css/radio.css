@@ -238,6 +238,7 @@ body {
     line-height: 1.4;
     margin-left: 35px;
     position: relative;
+    overflow-wrap: anywhere;
 }
 
 .messages .message .timestamp {
