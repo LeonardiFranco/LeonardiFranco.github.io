@@ -19,7 +19,7 @@
     <link type="text/css" rel="stylesheet" href="css/pixel.css">
     <link type="text/css" rel="stylesheet" href="css/radio.css">
     <script src="https://kit.fontawesome.com/c6e525f5ed.js" crossorigin="anonymous"></script>
-
+    <script data-ad-client="ca-pub-9093388488008656" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body>
@@ -111,12 +111,14 @@
     </main>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
 
     <script>
         // Your web app's Firebase configuration
@@ -127,11 +129,13 @@
             projectId: "stellar-builder-275317",
             storageBucket: "stellar-builder-275317.appspot.com",
             messagingSenderId: "732098420694",
-            appId: "1:732098420694:web:efb6623596a82ac1a70e77"
+            appId: "1:732098420694:web:efb6623596a82ac1a70e77",
+            measurementId: "G-F516CYFVYP"
         };
 
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
     </script>
     <!-- Core -->
     <script src="vendor/jquery/jquery.min.js"></script>
